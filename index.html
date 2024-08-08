@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delight</title>
+    <link rel="stylesheet" href = "style.css">
+</head>
+<body>
+    <header id="header">
+        <div class = "container">
+            <img src="./asset/logo.jpeg" alt="Gourmet Delight Logo" width="300" height="150" class="logo">
+            <h1 class="tagline">Experience the Joy of Fine Dining</h1>
+
+        </div>
+    </header>
+    
+    <nav id = "navbar">
+      <ul>
+         <li><a href="#hero">Home</a></li>
+         <li><a href="#about">About Us</a></li>
+         <li><a href="#menu">Menu</a></li>
+         <li><a href="#contact">Contact Us</a></li>
+     </ul>
+   </nav>
+
+   <section id="hero">
+      <div class="hero-overlay">
+         <h2>Welcome to Gourmet Delight</h2>
+         <p>Where taste meets the myth.</p>
+         <a href="#menu" class="cta-button">Explore Our Menu</a>
+      </div>
+   </section>
+   <section id="about">
+      <div class="container">
+          <div class="about-text">
+              <h2>About Us</h2>
+              <p>At Gourmet Delight, we believe in the magic of exquisite cuisine. Our chefs craft each dish with love and passion, ensuring an unforgettable dining experience.</p>
+          </div>
+          <div class="about-image">
+              <img src="./asset/about.jpeg" alt="About Us">
+          </div>
+      </div>
+    </section>
+    <section id="menu">
+        <div class="container">
+            <h2> Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-items">
+                    <img src="./asset/pizza.jpeg" alt="Menu Item 1">
+                    <h3>Menu Item1</h3>
+                    <p>Made with fresh bread and Cheese</p>
+                    <p class ="price">400rs</p>
+                </div>
+                <div class ="menu-items">
+                    <img src ="asset/noodles.jpeg" alt="Menu Item 2"> 
+                    <h3>Menu Item2</h3>
+                    <p>Made with wheat, tomato and capsicum</p>
+                    <p class ="price">300rs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2> Contact Us</h2>
+            <form id="contact-form">
+                <div class ="form-group">
+                    <label for ="name"> Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class ="form-group">
+                    <label for ="E-mail"> E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <input type="message" id="message" name="phone">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="address">
+                <p> 123 Gourmet St, Food City</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <button id="back-to-top">Back to Top</button>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

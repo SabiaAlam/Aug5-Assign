@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+.logo{
+    max-width: 150px;
+}
+
+header {
+    background: #f5d7e9;
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+.tagline {
+    font-size: 1em;
+    color: #d22020;
+}
+.container {
+    
+    width: 80%;
+    margin: 0 auto;/*Top & Bottom margin is 0 and Left & Right mergin is auto*/
+}
+/* Navigation Bar*/
+#navbar {
+    background: #333;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+/* list style for removing bullet*/
+/*flex for row*/
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+/* For gap between home about*/
+#navbar ul li {
+    margin: 0 15px;
+}
+
+#navbar ul li a {
+    color: #ebbbbb;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+}
+
+#navbar ul li a:hover {
+    color: #f90;
+}
+
+#hero{
+    background-image: url('rest.jpeg') ;
+    background-repeat: no-repeat , center/cover;
+    background-size: contain;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    background: rgba(138, 134, 111, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: rgb(203, 125, 86);
+    color: #e3d3d3;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+
+}
+
+.cta-button:hover {
+    background: #c60;
+}
+
+#about {
+    align-items: center;
+    padding: 50px 0;
+    background: #e0bfbf;
+}
+
+.about-text, .about-image {
+    padding: 20px;
+}
+
+.about-image img {
+    max-width: 50%;
+    border-radius: 0px;
+}
+
+#menu{
+    padding: 50px 0;
+    background: wheat;
+}
+/*grid specify number of column in a grid*/
+/* 1fr = 25%of available space*/
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+
+}
+
+.menu-items{
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    
+}
+.menu-items:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgb(224, 195, 46);
+}
+.menu-items img{
+    border-radius: 10px;
+}
+.price {
+    color: #f90;
+    font-weight: bold;
+}
+
+#contact {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+#contact-form {
+    display: grid;
+    grid-template-columns: 1fr;  /* 1fr=25% of total width*/ 
+    gap: 10px;
+}
+#contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+#contact-form .form-group label {
+    margin-bottom: 5px;
+}
+#contact-form .form-group input,
+#contact-form .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#contact-form button {
+    padding: 10px 20px;
+    background: #f90;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+#contact-form button:hover {
+    background: #c60;
+}
+.address {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer{
+    background: #ebb735;
+    text-align: center;
+    padding: 20px 0;
+}
+.social-media a{
+    color: #f53131;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.social-media a:hover {
+    color: rgb(115, 44, 221);
+}
+#back-to-top{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ebd05a;
+    color: #251111;
+    cursor: pointer;
+}
+#back-to-top:hover {
+    background: #c60;
+}
+/*Responsive Design*/
+@media screen and (min-width:756px) {
+    #about .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .about-text, .about-image {
+        flex: 1; /*item will grow to fill available space*/
+        padding: 20px;
+    }
+    .about-image img {
+        max-width: 100%;
+        border-radius: 10px;
+    }   
+}
+
+
